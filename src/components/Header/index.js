@@ -1,6 +1,6 @@
 import React from 'react';
 import {Flex} from "../../common/commonStyle";
-import {Border, Left, LinkItem, Links} from "./style";
+import {Border, Left, LinkItem, Links, Call} from "./style";
 
 
 export const Header = () => {
@@ -47,9 +47,9 @@ export const Header = () => {
                                 </LinkItem>
                             </Links>
                         </Left>
-                        <div>
-
-                        </div>
+                            <Call href="tel:+79045918331">
+                                Позвонить
+                            </Call>
                     </Flex>
                 </Border>
             </Flex>
