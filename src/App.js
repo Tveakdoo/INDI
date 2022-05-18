@@ -6,7 +6,6 @@ function App() {
         <AppWrapper>
             <Main>
                 <Home/>
-
             </Main>
             <footer>
                 123

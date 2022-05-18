@@ -1,17 +1,12 @@
 import React from 'react';
-import styled from "styled-components";
+import {Wrapper} from "./style";
+import {Header} from "../Header";
 
-const Background = styled.div`  
-  background: url("/img/logo.png")  no-repeat;
-  background-size: cover;
-  width: 1920px;
-  height: 980px;
-  
-`
+
 export const Home = () => {
     return (
-        <div>
-        <Background/>
-        </div>
+        <Wrapper>
+            <Header/>
+        </Wrapper>
     );
 };
