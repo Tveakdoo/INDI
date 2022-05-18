@@ -16,11 +16,23 @@ export const Titles = styled.div`
 `
 
 export const Text = styled.div`
-  padding-top: 160px;
+  padding-top: 130px;
   font-weight: 700;
   font-size: 48px;
 `
-export const Title = styled.div`
+export const Title = styled.h1`
+  margin: 0;
   font-weight: 800;
   font-size: 120px;
+`
+export const Logo = styled.div`
+padding-top: 120px;
+`
+export const Button = styled.a`
+  display: block;
+  border: 4px solid ${colors.white};
+  border-radius: 10px;
+  padding: 20px 50px ;
+  margin-top: 90px;
+  color: #fff;
 `

@@ -6,7 +6,6 @@ export const colors = {
     black: "#221F1F"
 }
 
-
 export const Container = styled.div`
 `
 export const AppWrapper = styled.div`
