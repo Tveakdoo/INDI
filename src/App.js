@@ -1,14 +1,15 @@
 import {AppWrapper, Main} from "./common/commonStyle";
 import {Home} from "./components/Home";
+import {Workplace} from "./components/Workplace";
 
 function App() {
     return (
         <AppWrapper>
             <Main>
                 <Home/>
+                <Workplace/>
             </Main>
             <footer>
-                123
             </footer>
         </AppWrapper>
     );

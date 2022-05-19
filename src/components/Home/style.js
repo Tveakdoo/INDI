@@ -12,10 +12,11 @@ export const Titles = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: "TT Norms";
 `
 
 export const Text = styled.div`
-  padding-top: 216px;
+  padding-top: 160px;
   font-weight: 700;
   font-size: 48px;
 `

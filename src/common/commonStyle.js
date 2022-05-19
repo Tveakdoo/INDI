@@ -8,6 +8,9 @@ export const colors = {
 
 
 export const Container = styled.div`
+    max-width: 1160px;
+    margin: 0 auto;
+    
 `
 export const AppWrapper = styled.div`
   display: flex;
@@ -24,4 +27,11 @@ export const Flex = styled.div`
   flex-direction: ${props => props.column ? "column" : "row"};
   justify-content: ${props => props.justifyContent};
   align-items: ${props => props.alignItems};
+`
+export const SectionTitle = styled.div`
+    color: ${props => props.white ? colors.white : colors.black};
+    margin-bottom: ${props => props.bottom + "px"};
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84.97px;
 `;
