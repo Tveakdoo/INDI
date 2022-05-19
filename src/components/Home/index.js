@@ -1,7 +1,7 @@
 import React from 'react';
 import {Wrapper, Titles, Text, Title, Logo, Button} from "./style";
 import {Header} from "../Header";
-
+import {Advantage} from "../Advantage";
 
 export const Home = () => {
     return (
