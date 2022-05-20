@@ -1,33 +1,44 @@
 import React from 'react';
-import {Wrapper, Title, Text, TopText, UnderText, Words} from "./style";
+import {Wrapper, Title, Text, List, ListItem, WrapperText} from "./style";
 import {Container} from "../../common/commonStyle";
-
+import {Flex} from "../../common/commonStyle";
 
 export const About = () => {
+    const list = [
+        "любые расходники",
+        "приятные цены",
+        "никаких начальников",
+        "выгодные акции",
+        "быстрый ответ на все вопросы",
+        "работаешь сам на себя",
+        "дружелюбный персонал",
+    ]
     return (
         <Wrapper>
             <Container>
-            <Title>
-                о нас
-            </Title>
-                <Text>
-                <TopText>
-                    Бьюти-коворкинг - это новый тренд, который смещает привычный понятие о работе
-                </TopText>
-                <UnderText>
-                    В INDI вы платите только за аренду рабочего места
-                </UnderText>
-                </Text>
-                <Words>
-                    <li>любые расходники</li>
-                    <li>приятные цены</li>
-                    <li>никаких начальников</li>
-                    <li>выгодные акции</li>
-                    <li>быстрый ответ на все вопросы</li>
-                    <li>работаешь сам на себя</li>
-                    <li>дружелюбный персонал</li>
-                </Words>
+                <Title>
+                    о нас
+                </Title>
+                <Flex justifyContent="center">
+                    <WrapperText>
+                        <Text marginBottom="153px">
+                            Бьюти-коворкинг - это новый тренд, который смещает привычный понятие о работе.
+                        </Text>
+                        <Text>
+                            В INDI вы платите только{" "}
+                            <span>за аренду</span>{" "}
+                            рабочего места
+                        </Text>
+                    </WrapperText>
+                    <List>
+                        {list.map(item => (
+                            <ListItem>{item}</ListItem>
+                        ))}
+                    </List>
+                </Flex>
+
             </Container>
+
         </Wrapper>
     );
 };

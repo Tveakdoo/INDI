@@ -14,25 +14,31 @@ export const Title = styled.h1`
   color: ${colors.white};
 `
 export const Text = styled.div`
-  background-color: rgba(0, 0, 0, 0.47);
+  margin-bottom: ${props => props.marginBottom };
   color: ${colors.white};
   font-weight: 400;
   font-size: 32px;
-  max-width: 380px;
-  text-align: center;
-  padding: 100px 43px;
+  max-width: 270px; 
+  & span{font-weight: bold}
+  
 `
-export const UnderText = styled.div`
-  margin-top: 100px;
-`
-export const TopText = styled.div`
-`
-export const Words = styled.ul`
-  font-weight: 500;
+
+
+export const List = styled.ul`
+  font-weight: 400;
   font-size: 30px;
   color: ${colors.white};
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: left;
+  margin-left: 65px;
+  margin-top: 80px;
+`;
+export const ListItem = styled.li`
+    &:not(:last-child){
+      margin-bottom: 40px;
+    }
+`;
+export const WrapperText = styled.div`
+  background-color: rgba(0, 0, 0, 0.47);
+  text-align: center;
+  padding: 100px 43px;
+  margin-left: 100px;
 `
