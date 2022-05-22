@@ -2,9 +2,9 @@ import styled from "styled-components";
 import {colors} from "../../common/commonStyle";
 
 export const Wrapper = styled.div`
-  background: url("/img/logo.png") no-repeat fixed;
+  background: url("/img/png/logo.png") no-repeat fixed;
   background-size: cover;
-  height: 980px; 
+  height: 980px;
 `
 export const Titles = styled.div`
   color: ${colors.white};

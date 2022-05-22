@@ -24,7 +24,7 @@ export const Header = () => {
                                     </a>
                                 </LinkItem>
                                 <LinkItem>
-                                    <a href="">
+                                    <a href="/">
                                         <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -34,7 +34,7 @@ export const Header = () => {
                                     </a>
                                 </LinkItem>
                                 <LinkItem>
-                                    <a href="">
+                                    <a href="/">
                                         <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <rect x="0.8" y="0.8" width="32.4" height="32.4" rx="3.2" stroke="white"

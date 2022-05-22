@@ -1,6 +1,6 @@
 import React from 'react';
 import {Wrapper, Title, Text, List, ListItem, WrapperText} from "./style";
-import {Container} from "../../common/commonStyle";
+import {Container, SectionTitle} from "../../common/commonStyle";
 import {Flex} from "../../common/commonStyle";
 
 export const About = () => {
@@ -16,9 +16,9 @@ export const About = () => {
     return (
         <Wrapper>
             <Container>
-                <Title>
+                <SectionTitle white bottom={36}>
                     о нас
-                </Title>
+                </SectionTitle>
                 <Flex justifyContent="center">
                     <WrapperText>
                         <Text marginBottom="153px">

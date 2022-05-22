@@ -25,10 +25,10 @@ export const Advantage = () => {
                     // внутри него мы отрисовываем, что нам нужно
                     list.map((item, index) => (
 
-                        <Flex justifyContent="center">
+                        <Flex key={index.toString()} justifyContent="center">
                             {/*{Object - это переменная для работы с объектами js }*/}
                             {Object.entries(item).map(([key, value]) => (
-                                <WeHave borderTop={index === 1}>
+                                <WeHave key={key} borderTop={index === 1}>
                                     <img src={`/img/svg/${key}`} alt={value}/>
                                     <Text>{value}</Text>
                                 </WeHave>

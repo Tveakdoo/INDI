@@ -2,17 +2,12 @@ import styled from "styled-components";
 import {colors} from "../../common/commonStyle";
 
 export const Wrapper = styled.div`
-  background: url("/img/about.png") no-repeat fixed;
+  background: url("/img/png/about.png") no-repeat fixed;
   background-size: cover;
   height: 980px;
   font-family: "TT Norms";
-`
-export const Title = styled.h1`
-  text-transform: uppercase;
-  font-size: 72px;
-  font-weight: 700;
-  color: ${colors.white};
-`
+  padding-top: 25px;
+`;
 export const Text = styled.div`
   margin-bottom: ${props => props.marginBottom };
   color: ${colors.white};
