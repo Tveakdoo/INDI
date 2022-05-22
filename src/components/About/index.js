@@ -32,7 +32,7 @@ export const About = () => {
                     </WrapperText>
                     <List>
                         {list.map(item => (
-                            <ListItem>{item}</ListItem>
+                            <ListItem key={item}>{item}</ListItem>
                         ))}
                     </List>
                 </Flex>

@@ -17,7 +17,7 @@ export const WeHave = styled.div`
 `
 
 
-export const Pluses = styled.div`
+export const Text = styled.div`
   max-width: 180px;
   padding: 20px;
 `
