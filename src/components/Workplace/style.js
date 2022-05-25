@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-  padding: 25px 0;
-`;
-
 export const FrontBlock = styled.div`
   position: relative;
   background: ${props => `url("/img/png/${props.img}")`} no-repeat;
@@ -13,13 +9,17 @@ export const FrontBlock = styled.div`
   height: 240px;
   z-index: 1;
   transition: .5s transform;
+  border-radius: 30px;
 `;
 
 export const Content = styled.div`
   position: relative;
+
   &:hover ${FrontBlock} {
     transform: translateX(-150px);
   }
+
+  margin-bottom: 34px;
 `;
 export const BackgroundBlock = styled.div`
   position: absolute;
@@ -37,10 +37,12 @@ export const BackgroundBlock = styled.div`
 export const Text = styled.span`
   font-size: 20px;
   width: 150px;
+ 
 `;
 export const Title = styled.div`
   font-size: 32px;
   font-weight: bold;
   line-height: 38.95px;
   color: white;
+  max-width: 230px;
 `;

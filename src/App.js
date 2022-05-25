@@ -13,6 +13,7 @@ function App() {
                 <Advantage/>
                 <About/>
                 <Workplace/>
+
             </Main>
             <Footer/>
         </AppWrapper>

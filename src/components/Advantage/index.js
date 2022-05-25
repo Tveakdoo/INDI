@@ -1,7 +1,6 @@
 import React from 'react';
 import {WrapperAdvantage, WeHave, Text} from "./style";
 import {Flex, Container} from "../../common/commonStyle";
-import './serega.css';
 
 
 export const Advantage = () => {

@@ -31,6 +31,11 @@ export const Flex = styled.div`
   width: ${props => props.width};
   height: ${props => props.height};
 `;
+export const Section = styled.section`
+  background: ${props => props.background};
+  background-color: ${props => props.backgroundColor};
+  padding: ${props => props.padding};
+`;
 export const SectionTitle = styled.div`
   margin-bottom: ${props => props.bottom + "px"};
   font-size: 72px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Wrapper, Title, Text, List, ListItem, WrapperText} from "./style";
+import {Wrapper, Text, List, ListItem, WrapperText} from "./style";
 import {Container, SectionTitle} from "../../common/commonStyle";
 import {Flex} from "../../common/commonStyle";
 

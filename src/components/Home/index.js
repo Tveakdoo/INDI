@@ -55,7 +55,7 @@ export const Home = () => {
                     </svg>
                 </Logo>
                 <Button>
-                    Хочу бесплатный час
+                     <span>О нас</span>
                 </Button>
             </Titles>
         </Wrapper>
