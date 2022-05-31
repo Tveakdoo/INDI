@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-export const colors = {
+export const styleVariables = {
     white: "#fff",
     gray: "#F2F2F2",
-    black: "#221F1F"
+    black: "#221F1F",
+    desktop: "(min-width:1080px)",
+    mobile: "(min-width:320px)"
 }
 
 export const Container = styled.div`
@@ -41,6 +43,6 @@ export const SectionTitle = styled.div`
   font-size: 72px;
   font-weight: bold;
   line-height: 84.97px;
-  color: ${props => props.white ? colors.white : colors.black};
+  color: ${props => props.white ? styleVariables.white : styleVariables.black};
   text-transform: uppercase;
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors} from "../../common/commonStyle";
+import {styleVariables} from "../../common/commonStyle";
 
 export const Wrapper = styled.div`
   background: url("/img/png/about.png") no-repeat fixed;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 `;
 export const Text = styled.div`
   margin-bottom: ${props => props.marginBottom};
-  color: ${colors.white};
+  color: ${styleVariables.white};
   font-weight: 400;
   font-size: 32px;
   max-width: 270px;
@@ -25,7 +25,7 @@ export const Text = styled.div`
 export const List = styled.ul`
   font-weight: 400;
   font-size: 30px;
-  color: ${colors.white};
+  color: ${styleVariables.white};
   margin-left: 65px;
   margin-top: 80px;
   list-style: none;

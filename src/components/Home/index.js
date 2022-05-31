@@ -14,7 +14,7 @@ export const Home = () => {
                     INDI Владимир
                 </Title>
                 <Logo>
-                    <svg width="154" height="77" viewBox="0 0 154 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  viewBox="0 0 154 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_170_2)">
                             <rect x="6.47339" y="1.5" width="141.053" height="66" rx="3.5" stroke="white" stroke-width="3" shape-rendering="crispEdges"/>
                         </g>

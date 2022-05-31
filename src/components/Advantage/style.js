@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {styleVariables} from "../../common";
 
 export const WrapperAdvantage = styled.section`
   font-family: "TT Norms";
@@ -8,12 +9,16 @@ export const WrapperAdvantage = styled.section`
 `
 
 export const WeHave = styled.div`
-  border-top: ${props => props.borderTop && "rgba(0,0,0,0.28) solid 2px;" };
-  &:not(:last-child) {border-right: rgba(0,0,0,0.28) solid 2px;}
-  padding: 40px;
-  width: 33.333%; 
-  display: flex;
-  max-height: 180px;
+  
+  @media screen and ${styleVariables.desktop} {
+    border-top: ${props => props.borderTop && "rgba(0,0,0,0.28) solid 2px;" };
+    &:not(:last-child) {border-right: rgba(0,0,0,0.28) solid 2px;}
+    padding: 40px;
+    width: 33.333%;
+    display: flex;
+    max-height: 180px;
+  }
+  
 `
 
 

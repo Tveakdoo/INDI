@@ -1,10 +1,9 @@
 import React from 'react';
 import {WrapperAdvantage, WeHave, Text} from "./style";
 import {Flex, Container} from "../../common/commonStyle";
+import {Slider} from "./slider";
 
-
-export const Advantage = () => {
-    const list = [
+export const list = [
         {
             "map.svg": "Удобное местоположение",
             "globe.svg": "Бесплатный интернет",
@@ -14,11 +13,13 @@ export const Advantage = () => {
             "clock.svg": "Первый час бесплатно",
             "spa.svg": "4 кабинета СПА",
             "sun.svg": "Солярий"
-        }
-    ];
+        }]
+export const Advantage = () =>{
     return (
         <WrapperAdvantage>
             <Container>
+                <Slider/>
+
                 {
                     //создаем функцию map, в которой хранится другая функция,в которой возвращаем jsx
                     // внутри него мы отрисовываем, что нам нужно
