@@ -47,7 +47,7 @@ export const Logo = styled.div`
     
     @media screen and  ${styleVariables.desktop} {
       width: 154px;
-      height: 77px;
+      height: 77px; 
       align-items: center;
       margin-top: 70px;
     }

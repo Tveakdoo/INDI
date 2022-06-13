@@ -9,7 +9,7 @@ export const Workplace = () => {
                 <SectionTitle bottom={36}>
                     Аренда рабочих мест
                 </SectionTitle>
-                <Flex wrap padding="0 100px" justifyContent="space-between">
+                <Flex wrap={true} padding="0 100px" justifyContent="space-between">
                     <Content>
                         <FrontBlock img="paric.png">
                             <Flex height="100%" column justifyContent="flex-end">

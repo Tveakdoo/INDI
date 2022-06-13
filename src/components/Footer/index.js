@@ -4,7 +4,7 @@ import {Flex, Section} from "../../common/commonStyle";
 
 export const Footer = () => {
     return (
-        <Section as="footer" backgroundColor="#221F1F" padding="20px 100px">
+        <Section as="footer" backgroundColor="#221F1F" padding="20px">
             <Flex justifyContent="space-between">
                 <Logo>
                     <img src="/img/svg/logotip.svg" alt="Лого"/>
