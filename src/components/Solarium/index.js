@@ -22,7 +22,6 @@ export const Solarium = () => {
                 </Flex>
                 <Indi>
                 <YMaps no-repeat>
-                    <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
                 </YMaps>
                 </Indi>
             </Container>

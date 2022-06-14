@@ -12,7 +12,7 @@ export const Text = styled.div`
     margin: 0 50px;
     padding: 110px 0;
     color: ${styleVariables.black};
-    font-weight: 700;
+    font-weight: 500;
     font-size: 32px;
     max-width: 230px;
   }
