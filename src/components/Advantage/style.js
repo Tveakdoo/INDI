@@ -1,23 +1,23 @@
 import styled from "styled-components";
-import {styleVariables} from "../../common";
+import { styleVariables } from "../../common";
 
 export const Unlock = styled.div`
   display: block;
   @media screen and ${styleVariables.desktop} {
     display: none;
   }
-`
+`;
 
 export const WrapperAdvantage = styled.section`
-  font-family: "TT Norms";
+  font-family: "TT Norms",sans-serif;
   font-size: 20px;
   font-weight: 400;
   padding: 30px;
-`
+`;
 
 export const WeHave = styled.div`
   display: flex;
-  @media screen and ${styleVariables.desktop}{
+  @media screen and ${styleVariables.desktop} {
     & img {
     }
   }
@@ -42,13 +42,13 @@ export const WeHave = styled.div`
     }
   }
 
-`
+`;
 export const Text = styled.div`
   @media screen and ${styleVariables.desktop} {
     max-width: 180px;
     padding: 20px;
   }
-`
+`;
 export const SliderWrapper = styled.div`
 
 

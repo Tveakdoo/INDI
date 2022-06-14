@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { styleVariables} from "../../common";
+import { styleVariables } from "../../common";
 
 export const Logo = styled.div`
   & img {
@@ -8,7 +8,7 @@ export const Logo = styled.div`
     @media screen and ${styleVariables.desktop} {
       width: 150px;
     }
-`
+`;
 
 export const Phone = styled.a`
   font-weight: 700;
@@ -16,7 +16,7 @@ export const Phone = styled.a`
   display: block;
   color: #fff;
   text-decoration: none;
-  font-family: "TT Norms";
+  font-family: "TT Norms",sans-serif;
   opacity: 70%;
   padding-top: 20px;
   @media screen and ${styleVariables.desktop} {
@@ -25,8 +25,8 @@ export const Phone = styled.a`
     display: block;
     color: #fff;
     text-decoration: none;
-    font-family: "TT Norms";
+    font-family: "TT Norms",sans-serif;
     opacity: 70%;
     padding-top: 15px;
   }
-`
+`;
