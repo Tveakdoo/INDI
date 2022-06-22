@@ -5,7 +5,9 @@ export const styleVariables = {
     gray: "#F2F2F2",
     black: "#221F1F",
     desktop: "(min-width:1080px)",
-    mobile: "(min-width:320px)"
+    mobile: "(min-width:320px)",
+    mobile1: "(min-width:375px)",
+    tablet: "(min-width:768px)",
 }
 
 export const Container = styled.div`
@@ -47,6 +49,14 @@ export const SectionTitle = styled.div`
   color: ${props => props.white ? styleVariables.white : styleVariables.black};
   text-transform: uppercase;
   text-align: center;
+  @media screen and ${styleVariables.tablet} {
+    margin-bottom: ${props => props.bottom + "px"};
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 84.97px;
+    color: ${props => props.white ? styleVariables.white : styleVariables.black};
+    text-transform: uppercase;
+  }
   @media screen and ${styleVariables.desktop} {
     margin-bottom: ${props => props.bottom + "px"};
     font-size: 72px;

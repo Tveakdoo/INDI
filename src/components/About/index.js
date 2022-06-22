@@ -14,7 +14,7 @@ export const About = () => {
         "дружелюбный персонал",
     ]
     return (
-        <Wrapper>
+        <Wrapper id="about">
             <Container>
                 <SectionTitle white bottom={36}>
                     о нас

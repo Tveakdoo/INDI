@@ -3,7 +3,7 @@ import {Flex, Section, styleVariables, useMediaQuery} from "../../common";
 import {Border, Left, LinkItem, Links, Call} from "./style";
 
 
-export const Header = () => {
+export const  Header = () => {
     const isDesktop = useMediaQuery(styleVariables.desktop);
     return (
         <Section as="header">
@@ -14,7 +14,7 @@ export const Header = () => {
                             {isDesktop && <span>Наши контакты:</span>}
                             <Links>
                                 <LinkItem>
-                                    <a href="/">
+                                    <a href="https://www.instagram.com/indi.vladimir/" target="_blank">
                                         <svg className="instagram icon" xmlns="http://www.w3.org/2000/svg"
                                              viewBox="0 0 34 34">
                                             <rect width="34" height="34" rx="4" className="instagram-rect-1"/>
@@ -44,7 +44,7 @@ export const Header = () => {
                                     </a>
                                 </LinkItem>
                                 <LinkItem>
-                                    <a href="/">
+                                    <a href="https://vk.com/vladimir.indi" target="_blank" referrerPolicy="no-referrer" >
                                         <svg className="icon vk" viewBox="0 0 34 34"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <rect x="0.8" y="0.8" width="32.4" height="32.4" rx="3.2" stroke="white"
@@ -69,7 +69,7 @@ export const Header = () => {
                                 </LinkItem>
                             </Links>
                         </Left>
-                        <Call href="tel:+79045918331">
+                        <Call href="tel:+79805830038">
 
                             {isDesktop ? <span>Позвонить</span> : <img src="/img/svg/phone.svg" alt="Телефон"/>}
                         </Call>

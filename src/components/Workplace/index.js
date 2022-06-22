@@ -1,6 +1,6 @@
 import React from 'react';
 import {BackgroundBlock, FrontBlock, Title, Content, Text} from "./style";
-import {Container, Flex, SectionTitle, Section} from "../../common/commonStyle";
+import {Container, Flex, SectionTitle, Section} from "../../common";
 
 export const Workplace = () => {
     return (
@@ -9,11 +9,11 @@ export const Workplace = () => {
                 <SectionTitle bottom={36}>
                     Аренда рабочих мест
                 </SectionTitle>
-                <Flex wrap={true} padding="0 100px" justifyContent="space-between">
+                <Flex wrap="true" padding="0 100px" justifyContent="space-between">
                     <Content>
                         <FrontBlock img="paric.png">
                             <Flex height="100%" column justifyContent="flex-end">
-                                <Title>
+                                <Title bottom="0">
                                     Рабочее место парикмахера
                                 </Title>
                             </Flex>
@@ -26,7 +26,7 @@ export const Workplace = () => {
                     <Content>
                         <FrontBlock img="manic.png">
                             <Flex height="100%" column justifyContent="flex-end">
-                                <Title>
+                                <Title bottom="10">
                                     Маникюрная зона
                                 </Title>
                             </Flex>
@@ -38,7 +38,7 @@ export const Workplace = () => {
                     <Content>
                         <FrontBlock img="spa.png">
                             <Flex height="100%" column justifyContent="flex-end">
-                                <Title>
+                                <Title bottom="10">
                                     Кабинет с кушеткой
                                 </Title>
                             </Flex>
@@ -50,7 +50,7 @@ export const Workplace = () => {
                     <Content>
                         <FrontBlock img="makeup.png">
                             <Flex height="100%" column justifyContent="flex-end">
-                                <Title>
+                                <Title bottom="10">
                                     Визажная зона
                                 </Title>
                             </Flex>

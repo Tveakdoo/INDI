@@ -2,9 +2,14 @@ import styled from "styled-components";
 import {styleVariables} from "../../common";
 
 export const Wrapper = styled.div`
-  background: url("/img/png/logo.png") no-repeat fixed;
+  background: url("/img/png/logo1.png") no-repeat;
   background-size: cover;
   height: 370px;
+  @media screen and ${styleVariables.tablet} {
+    background: url("/img/png/logo.png") no-repeat fixed;
+    background-size: cover;
+    height: 521px;
+  }
   @media screen and ${styleVariables.desktop} {
     background: url("/img/png/logo.png") no-repeat fixed;
     background-size: cover;
@@ -22,6 +27,11 @@ export const Titles = styled.div`
 
 export const Text = styled.div`
   display: none;
+  @media screen and ${styleVariables.tablet} {
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    padding-top: 55px;
   @media screen and ${styleVariables.desktop} {
     font-weight: 700;
     font-size: 48px;
@@ -33,18 +43,29 @@ export const Title = styled.h1`
   font-weight: 700;
   font-size: 32px;
   padding-top: 40px;
-  @media screen and ${styleVariables.desktop} {
-    margin: 0;
-    font-weight: 800;
-    font-size: 120px;
+ 
+  @media screen and ${styleVariables.mobile1} {
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 40px;
+    @media screen and ${styleVariables.tablet} {
+      font-weight: 700;
+      font-size: 70px;
+      padding-top: 10px;
+      margin: 20px;
+    }
+      @media screen and ${styleVariables.desktop} {
+      margin: 0;
+      font-weight: 800;
+      font-size: 120px;
+    }
   }
 `
-export const Logo = styled.div`
 
+export const Logo = styled.div`
   & svg {
     width: 85px;
     height: 50px;
-    
     @media screen and  ${styleVariables.desktop} {
       width: 154px;
       height: 77px; 
@@ -65,7 +86,8 @@ export const Button = styled.a`
   font-size: 14px;
   cursor: pointer;
   font-weight: 700;
-  
+  text-decoration: none;
+  scroll-behavior: ;
   @media screen and  ${styleVariables.desktop} {
     position: relative;
     display: block;
@@ -77,7 +99,9 @@ export const Button = styled.a`
     background: transparent;
     font-size: 20px;
     cursor: pointer;
-    font-weight: 700;;
+    font-weight: 700;
+    text-decoration: none;
+
   }
   & span {
     position: relative;
