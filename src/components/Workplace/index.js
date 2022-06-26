@@ -13,7 +13,7 @@ export const Workplace = () => {
                     <Content>
                         <FrontBlock img="paric.png">
                             <Flex height="100%" column justifyContent="flex-end">
-                                <Title>
+                                <Title bottom="0">
                                     Рабочее место парикмахера
                                 </Title>
                             </Flex>
@@ -26,7 +26,7 @@ export const Workplace = () => {
                     <Content>
                         <FrontBlock img="manic.png">
                             <Flex height="100%" column justifyContent="flex-end">
-                                <Title>
+                                <Title bottom="10">
                                     Маникюрная зона
                                 </Title>
                             </Flex>
@@ -38,7 +38,7 @@ export const Workplace = () => {
                     <Content>
                         <FrontBlock img="spa.png">
                             <Flex height="100%" column justifyContent="flex-end">
-                                <Title>
+                                <Title bottom="10">
                                     Кабинет с кушеткой
                                 </Title>
                             </Flex>
@@ -50,7 +50,7 @@ export const Workplace = () => {
                     <Content>
                         <FrontBlock img="makeup.png">
                             <Flex height="100%" column justifyContent="flex-end">
-                                <Title>
+                                <Title bottom="10">
                                     Визажная зона
                                 </Title>
                             </Flex>

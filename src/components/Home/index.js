@@ -54,7 +54,7 @@ export const Home = () => {
                         </defs>
                     </svg>
                 </Logo>
-                <Button>
+                <Button href="#about">
                      <span>О нас</span>
                 </Button>
             </Titles>

@@ -8,7 +8,7 @@ export const FrontBlock = styled.div`
   background-size: cover;
   width: 180px;
   height: 100px;
-      z-index: 1;
+  z-index: 1;
   transition: .5s transform;
   border-radius: 32px;
   @media screen and ${styleVariables.desktop} {
@@ -67,7 +67,7 @@ export const BackgroundBlock = styled.div`
   
 `
 export const Text = styled.span`
-  font-size: 8px;
+  font-size: 9px;
   width: 150px;
   justify-content: center;
   @media screen and ${styleVariables.desktop} {
@@ -77,16 +77,20 @@ export const Text = styled.span`
  
 `;
 export const Title = styled.div`
-  font-size: 17px;
+  margin-bottom: ${props => props.bottom + "px"};
+  font-size: 16px;
   font-weight: bold;
-  line-height: 38.95px;
+  line-height: 23px;
   color: white;
-  max-width: 230px;
+  padding: 30px 10px;
+  text-align: center;
   @media screen and ${styleVariables.desktop} {
+    text-align: inherit ;
     font-size: 32px;
     font-weight: bold;
     line-height: 38.95px;
     color: white;
     max-width: 230px;
+    padding: 0;
   }
 `;

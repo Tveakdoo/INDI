@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, SectionTitle, Section, Flex } from "../../common";
+import {Container, SectionTitle, Section, Flex, useMediaQuery} from "../../common";
 import { Text, Block, MapWrapper } from "./style";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 
 export const Solarium = () => {
+	const isDesktop = useMediaQuery("(min-width: 768px)");
+	const getMapHeight = () => isDesktop ? "426px" : "200px";
 	return (
 		<Section padding="25px 0 0" backgroundColor="#F2F2F2">
 			<Container>
@@ -16,13 +18,13 @@ export const Solarium = () => {
 						<img src="/img/png/solarium.png" alt="Солярий" />
 					</Block>
 					<Text>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, sint.
+						Современный солярий с первоклассными коллагеновыми лампами. С помощью него вы можете получить ровный и красивый загар,а вдобавок, сгладить морщины и сделать кожу более эластичной.
 					</Text>
 				</Flex>
 			</Container>
 			<MapWrapper>
 				<YMaps>
-					<Map width="100%" height={426} defaultState={{ center: [56.137315, 40.400652], zoom: 17 }}>
+					<Map width="100%" height={getMapHeight()} defaultState={{ center: [56.137315, 40.400652], zoom: 17 }}>
 						<Placemark defaultGeometry={[56.137315, 40.400652]} />
 					</Map>
 				</YMaps>

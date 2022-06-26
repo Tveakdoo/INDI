@@ -9,7 +9,7 @@ export const Advantage = () => {
 	}, {
 		"clock.svg": "Первый час бесплатно", "spa.svg": "4 кабинета СПА", "sun.svg": "Солярий",
 	}];
-	const isDesktop = useMediaQuery("(min-width: 768px)");
+	const isDesktop = useMediaQuery("(min-width: 767px)");
 	return (<WrapperAdvantage>
 		{isDesktop ? <Container>
 			{//создаем функцию map, в которой хранится другая функция,в которой возвращаем jsx

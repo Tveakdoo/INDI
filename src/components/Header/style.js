@@ -71,8 +71,8 @@ export const LinkItem = styled.li`
   .icon {
     fill: transparent;
     transition: fill .2s;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     
     @media screen and ${styleVariables.desktop}{
       width: 34px;

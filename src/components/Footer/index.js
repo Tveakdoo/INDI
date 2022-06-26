@@ -1,6 +1,6 @@
 import React from "react";
-import { Logo, Phone } from "./style";
-import { Flex, Section } from "../../common";
+import { Logo, Phone, Adress} from "./style";
+import {Container, Flex, Section} from "../../common";
 
 export const Footer = () => {
 	return (
@@ -9,9 +9,14 @@ export const Footer = () => {
 				<Logo>
 					<img src="/img/svg/logotip.svg" alt="Лого" />
 				</Logo>
-				<Phone href="tel:+89045912343">
-					8(900)535-35-35
-				</Phone>
+				<Section>
+					<Phone href="tel:+79805830038">
+						8(980)583-00-38
+					</Phone>
+					<Adress>
+						ул. Горького, 27, 2 этаж
+					</Adress>
+				</Section>
 			</Flex>
 		</Section>
 	);
